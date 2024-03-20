@@ -35,28 +35,32 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: hsl(10, 79%, 65%);
-  width: 400px;
-  height: 90px;
+  width: 414px;
+  height: 100px;
   border-radius: 14px;
   padding: 0 25px;
   color: white;
 }
 
 .bottom {
-  height: 300px;
-  width: 400px;
+  height: 350px;
+  width: 414px;
   border-radius: 14px;
   background-color: white;
   padding: 20px 25px;
 }
 
+.bottom h2 {
+  margin-left: 5px;
+}
+
 .charts {
   display: flex;
-  gap: 14px;
+  overflow-x: hidden;
   justify-content: center;
   align-items: end;
   text-align: center;
-  padding: 50px 0 20px 0;
+  padding: 15px 0 20px 0;
   border-bottom: 1px solid hsl(27, 66%, 92%);
   color: hsl(28, 10%, 53%);
 }
@@ -106,4 +110,31 @@ main {
 
 .chart-7 {
   height: 60px;
+}
+
+.charts-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.tooltip {
+  color: white;
+  background-color: black;
+  width: 52px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transform: scaleX(0);
+  transition: all 200ms;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.charts-cont:hover .tooltip {
+  transform: scaleX(1);
 }
