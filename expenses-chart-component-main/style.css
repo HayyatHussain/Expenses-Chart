@@ -12,6 +12,9 @@ body {
   height: 100%;
   font-family: "DM Sans", sans-serif;
 }
+p {
+  letter-spacing: 0.5px;
+}
 
 #main {
   width: 100%;
@@ -35,19 +38,25 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: hsl(10, 79%, 65%);
-  width: 414px;
+  width: 436px;
   height: 100px;
   border-radius: 14px;
-  padding: 0 25px;
+  padding: 0 28px;
   color: white;
 }
 
+.top p {
+  font-size: 15px;
+  font-weight: 250;
+  margin-bottom: 4px;
+}
+
 .bottom {
-  height: 350px;
-  width: 414px;
+  height: 380px;
+  width: 436px;
   border-radius: 14px;
   background-color: white;
-  padding: 20px 25px;
+  padding: 22px 28px;
 }
 
 .bottom h2 {
@@ -57,10 +66,11 @@ main {
 .charts {
   display: flex;
   overflow-x: hidden;
+  gap: 1.5px;
   justify-content: center;
   align-items: end;
   text-align: center;
-  padding: 15px 0 20px 0;
+  padding: 13px 0 20px 0;
   border-bottom: 1px solid hsl(27, 66%, 92%);
   color: hsl(28, 10%, 53%);
 }
@@ -70,6 +80,13 @@ main {
   margin-top: 5px;
 }
 
+.chart {
+  transform: scaleX(0);
+  transition: transform 450ms ease-in;
+
+  transition: all 250ms;
+}
+
 .chart-1,
 .chart-2,
 .chart-4,
@@ -77,12 +94,12 @@ main {
 .chart-6,
 .chart-7 {
   background-color: hsl(10, 79%, 65%);
-  width: 37px;
+  width: 39px;
   border-radius: 4px;
 }
 
 .chart-3 {
-  width: 37px;
+  width: 39px;
   height: 125px;
   background-color: hsl(186, 34%, 60%);
   border-radius: 4px;
@@ -118,6 +135,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .tooltip {
@@ -137,4 +155,35 @@ main {
 
 .charts-cont:hover .tooltip {
   transform: scaleX(1);
+}
+
+.charts-cont:hover .chart {
+  background-color: white;
+  border: 1px solid hsl(10, 79%, 65%);
+}
+
+.wed:hover .chart-3 {
+  background-color: white;
+  border: 1px solid hsl(186, 34%, 60%);
+}
+
+.dets {
+  height: 60px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.dets p {
+  color: hsl(28, 10%, 53%);
+  font-size: 14.8px;
+}
+
+.left h1 {
+  font-size: 35px;
 }
