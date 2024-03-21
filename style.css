@@ -257,11 +257,9 @@ Media Queries
     width: 380px;
     padding: 22px 20px;
   }
-
   .charts {
-    gap: -50px !important;
+    gap: 1px;
   }
-
   .charts p {
     font-size: 14px;
   }
@@ -291,5 +289,20 @@ Media Queries
 
   .left h1 {
     font-size: 33px;
+  }
+  .mon {
+    margin: 0 -6px 0 0;
+  }
+
+  .sun {
+    margin: 0 0 0 -6px;
+  }
+
+  .tue,
+  .wed,
+  .sat,
+  .thu,
+  .fri {
+    margin: 0 -6px;
   }
 }
