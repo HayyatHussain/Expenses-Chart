@@ -306,3 +306,51 @@ Media Queries
     margin: 0 -6px;
   }
 }
+
+@media (max-width: 415px) {
+  .top {
+    width: 342px;
+    padding: 0 14px;
+  }
+
+  .top p {
+    font-size: 14px;
+  }
+
+  .bottom {
+    width: 342px;
+    padding: 22px 14px;
+  }
+  .charts {
+    gap: 8px;
+  }
+  .charts p {
+    font-size: 13.8px;
+  }
+
+  .chart-1,
+  .chart-2,
+  .chart-4,
+  .chart-5,
+  .chart-6,
+  .chart-7 {
+    width: 33.8px;
+  }
+
+  .chart-3 {
+    width: 33.8px;
+  }
+
+  .tooltip {
+    width: 50px;
+    font-size: 12.9px;
+  }
+
+  .dets p {
+    font-size: 13.8px;
+  }
+
+  .left h1 {
+    font-size: 31.5px;
+  }
+}
